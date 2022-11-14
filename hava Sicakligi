@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        int sayi, sicaklik;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Bugün hava kaç derece:" );
+        sicaklik = input.nextInt();
+
+        if (sicaklik<5) {
+            System.out.println("Bugün kayak yap" );
+        } else if (sicaklik>4 && sicaklik<16) {
+            System.out.println("Bugün sinemaya git" );
+        } else if (sicaklik>15 && sicaklik<26) {
+            System.out.println("Bugün piknik yap" );
+        } else
+        System.out.println("Bugün yüzmeye git" );
+    }
+}
